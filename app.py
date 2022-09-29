@@ -1,8 +1,10 @@
 import os
 import streamlit as st
+from stt import stt_wav
 from audiorecorder import audiorecorder
 from summarization import summarization_text
-from stt import stt_wav
+from pydub import AudioSegment
+
 
 
 st.markdown("# **🎤 STT(Speech To Text) & ⭐Summarization**")
@@ -18,10 +20,13 @@ if option == "마이크":
         # To save audio to a file:
         wav_file = open("audio.mp3", "wb")
         wav_file.write(audio.tobytes())
-        commandwav = "ffmpeg -y -i audio.mp3 audio.wav"
-        os.system(commandwav)
+        ###
+        AudioSegment.from_mp3("./audio.mp3").export("./src.wav", format="wav")
+        ###
+        # commandwav = "ffmpeg -y -i audio.mp3 audio.wav"
+        # os.system(commandwav)
         try:
-            preprocessing = stt_wav("audio.wav")
+            preprocessing = stt_wav("src.wav")
             st.markdown("### 🔑 대화 내용 요약")
             with st.spinner('텍스트를 요약하는 중 입니다.'):
                 st.code(summarization_text(preprocessing), language='python')
