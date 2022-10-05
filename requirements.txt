@@ -61,4 +61,3 @@ validators==0.20.0
 watchdog==2.1.9
 zipp==3.8.1
 pydub
-ffmpeg-python
