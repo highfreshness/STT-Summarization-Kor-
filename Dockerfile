@@ -16,3 +16,5 @@ RUN apt-get install -y libasound-dev portaudio19-dev libportaudio2 libportaudioc
 RUN apt-get install -y ffmpeg
 RUN apt-get install flac
 RUN pip install -r requirements.txt
+
+CMD ["streamlit", "run", "app.py"]
