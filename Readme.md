@@ -2,7 +2,7 @@
 
 ## [프로젝트 소개]
 
-STT( Speech To Text )를 통해 대화내용을 문자로 변환 후  Summarization model을 통해 내용을 요약
+STT(Speech To Text)를 통해 대화 내용을 문자로 변환 후  Summarization model을 통해 내용을 요약
 
 ## [담당 업무]
 
