@@ -25,7 +25,7 @@ STT : pyaudio, ffmpeg, SpeechRecognition
 < STT >
 
 - SpeechRecognition 라이브러리를 이용해 STT 구현
-- streamlit 오디오 레코더 컴포넌트 [링크](https://github.com/theevann/streamlit-audiorecorder) 를 활용해 음성을 입력 받아 mp3 파일 저장
+- streamlit 오디오 레코더 컴포넌트([링크](https://github.com/theevann/streamlit-audiorecorder)) 를 활용해 음성을 입력 받아 mp3 파일 저장
 - SpeechRecognition 라이브러리로 음성 파일 전달
 
 < Summarization >
